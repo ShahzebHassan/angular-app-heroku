@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>Rent Calculator</h1>
+
+    <input type="number" name="rent" placeholder="Enter your total rent" [(ngModel)]="rent" />
+    <input type="number" placeholder="Rent increase per Year" [(ngModel)]="increase">
+    <input type="number" placeholder="Number of Total Years" [(ngModel)]="years">
+
+    <button type="button" (click)="calculate()"> Calculate </button>
+    <br>
+
+    <h4 *ngFor="let r of total;let i=index">
+        Year {{i+1}}&nbsp; &nbsp;=&nbsp;&nbsp;{{r}}&nbsp;Rs
+    </h4>
+</div>

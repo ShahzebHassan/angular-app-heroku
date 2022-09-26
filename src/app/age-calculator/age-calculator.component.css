@@ -1,0 +1,45 @@
+.container {
+    background-image: url("https://www.shutterstock.com/image-photo/miniature-people-concept-aging-society-600w-1199939029.jpg");
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button {
+    cursor: pointer;
+    background: #f45c41;
+    border: 0;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    height: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    min-width: 120px;
+    margin-left: 43.5%;
+    margin-top: 5px;
+
+}
+
+input {
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #cbcdd3;
+    color: #333;
+    font-size: 16px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    margin-left: 43%;
+    border: 0;
+}
+
+p {
+    color: #333;
+    font-size: 20px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}

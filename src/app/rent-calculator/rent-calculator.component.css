@@ -1,0 +1,54 @@
+.container {
+    background-image: url("https://c0.wallpaperflare.com/preview/807/1021/167/chart-graph-business-finance.jpg");
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button {
+    cursor: pointer;
+    background: #f45c41;
+    border: 0;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    height: 40px;
+    /* margin-bottom: 10px; */
+    text-align: center;
+    min-width: 120px;
+    margin-left: 42%;
+    margin-top: 5px;
+
+}
+
+input {
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #cbcdd3;
+    color: #333;
+    font-size: 16px;
+    height: 40px;
+    margin-left: 38%;
+    border: 0;
+    padding: 6px;
+    margin-bottom: 15px;
+
+}
+
+h1 {
+    color: black;
+    font-weight: bold;
+    margin-left: 40%;
+}
+
+h4 {
+    margin-top: 15px;
+    margin-left: 5px;
+    padding: 5px;
+    float: left;
+    font-weight: bold;
+    color: #f45c41;
+    border: 1px solid azure;
+    border-radius: 10px;
+    background-color: #2cdffa;
+}

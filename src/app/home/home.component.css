@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.example-card {
+    width: 30%;
+    height: 26%;
+    cursor: pointer;
+    background: #f45c41;
+    border-radius: 10%;
+    font-size: 16px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.container {
+    background-image: url("https://media.istockphoto.com/photos/modern-computerlaptop-with-blank-screen-on-counter-barand-window-view-picture-id1157789866?b=1&k=20&m=1157789866&s=612x612&w=0&h=iaPqRSRR3aFjvnLKGENlxU_GD7V34Ptko80c0Bj-rXI=");
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p {
+    text-align: center;
+    margin: 20px 15px 0 15px;
+}
+
+.mat-list-item {
+    margin-left: 30%;
+    border: 1px solid transparent;
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 15%;
+    color: black;
+    font-weight: bold;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.mat-list-item:hover {
+    box-shadow: inset 200px 0 0 0 #9bfbfb;
+    color: black;
+}
