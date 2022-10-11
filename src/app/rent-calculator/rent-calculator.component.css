@@ -1,9 +1,72 @@
-.container {
-    background-image: url("https://c0.wallpaperflare.com/preview/807/1021/167/chart-graph-business-finance.jpg");
-    height: 90%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+h1 {
+    font-weight: bold;
+    margin-left: 40%;
+    color: #06c384;
+}
+
+
+#users {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#users td,
+#users th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#users tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#users tr:hover {
+    background-color: #ddd;
+}
+
+#users th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #06c384;
+    color: white;
+}
+
+input {
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #393b3b;
+    color: #333;
+    font-size: 16px;
+    height: 40px;
+    width: 180px;
+    margin-left: 38%;
+    border: 0;
+    padding: 4px;
+    margin-bottom: 5px;
+}
+
+button {
+    cursor: pointer;
+    background: #06c384;
+    border: 0;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    height: 40px;
+    text-align: center;
+    min-width: 120px;
+    margin-top: 5px;
+    margin-left: 42%;
+}
+
+
+/*
+table {
+    width: 100%;
+    margin-top: 20px;
 }
 
 button {
@@ -15,32 +78,33 @@ button {
     font-size: 16px;
     height: 40px;
     /* margin-bottom: 10px; */
-    text-align: center;
+/* text-align: center;
     min-width: 120px;
-    margin-left: 42%;
+    margin-left: 5px;
     margin-top: 5px;
 
-}
+} */
 
-input {
+/* input {
     border-radius: 10px;
     box-shadow: 5px 5px 20px #cbcdd3;
     color: #333;
     font-size: 16px;
     height: 40px;
-    margin-left: 38%;
-    border: 0;
-    padding: 6px;
-    margin-bottom: 15px;
-
+    margin-left: 5px;
+    /* margin-left: 38%; */
+/* border: 0;
+    padding: 4px;
+    /* margin-bottom: 15px; */
+/* 
 }
 
 h1 {
     color: black;
     font-weight: bold;
     margin-left: 40%;
-}
-
+} */
+/* 
 h4 {
     margin-top: 15px;
     margin-left: 5px;
@@ -51,4 +115,4 @@ h4 {
     border: 1px solid azure;
     border-radius: 10px;
     background-color: #2cdffa;
-}
+}  */

@@ -5,19 +5,16 @@
         src="https://images.unsplash.com/photo-1538464721630-06563f546140?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHVsdHJhJTIwaGR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
         width=" 70px" height="70px" style="border-radius: 50%;"></mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="/home" routerLinkActive="active"><i class="material-icons"
+      <a mat-list-item [routerLink]="['home']" routerLinkActive="active"><i class="material-icons"
           style="color: rgb(109, 109, 196);">home</i>Home</a>
-      <a mat-list-item routerLink="/age-calculator" routerLinkActive="active"><i class="material-icons"
-          style="color: #fe9364;">calculate</i>Age
-        Calculator</a>
-      <a mat-list-item routerLink="/rent-calculator" routerLinkActive="active"><i class="material-icons"
+      <a mat-list-item [routerLink]="['age-calculator']" routerLinkActive="active"><i class="material-icons"
+          style="color: #fe9364;">calculate</i>Age Calculator</a>
+      <a mat-list-item [routerLink]="['rent-calculator']" routerLinkActive="active"><i class="material-icons"
           style="color: #06c384;">calculate</i>Rent Calculator</a>
-      <a mat-list-item routerLink="/km-mile" routerLinkActive="active"><i class="material-icons"
-          style="color: #fc5c6e;">calculate</i>Km to
-        Mph</a>
-      <a mat-list-item routerLink="/crud" routerLinkActive="active"><i class="material-icons"
-          style="color: #00aaae;">webhook</i>Crud
-        Operations</a>
+      <a mat-list-item [routerLink]="['km-mile']" routerLinkActive="active"><i class="material-icons"
+          style="color: #fc5c6e;">calculate</i>Km to Mph</a>
+      <a mat-list-item [routerLink]="['crud']" routerLinkActive="active"><i class="material-icons"
+          style="color: #00aaae;">webhook</i>Crud Operations</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -27,6 +24,7 @@
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <span>MyApp</span>
+      <button (click)="logout()" mat-raised-button style="margin-left: 75%;">Logout</button>
     </mat-toolbar>
     <router-outlet></router-outlet>
     <!-- Add Content Here -->

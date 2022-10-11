@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,7 +28,12 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatInputModule } from '@angular/material/input';
-import { CommonModule, NgTemplateOutlet } from '@angular/common';
+import { CommonModule, } from '@angular/common';
+import { ValidationDirective } from './validation.directive';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { AuthGuard } from './shared/auth.guard';
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
@@ -40,6 +45,9 @@ import { CommonModule, NgTemplateOutlet } from '@angular/common';
     KmMileComponent,
     CrudComponent,
     DialogComponent,
+    ValidationDirective,
+    LoginComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
@@ -70,7 +78,8 @@ import { CommonModule, NgTemplateOutlet } from '@angular/common';
     ReactiveFormsModule,
 
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [AuthGuard, CookieService],
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule { }

@@ -6,19 +6,30 @@ import { AgeCalculatorComponent } from './age-calculator/age-calculator.componen
 import { RentCalculatorComponent } from './rent-calculator/rent-calculator.component';
 import { KmMileComponent } from './km-mile/km-mile.component';
 import { CrudComponent } from './crud/crud.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { AuthGuard } from './shared/auth.guard';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'navigation', component: NavigationComponent },
-  { path: 'home', component: HomeComponent },
-  { path: 'age-calculator', component: AgeCalculatorComponent },
-  { path: 'rent-calculator', component: RentCalculatorComponent },
-  { path: 'km-mile', component: KmMileComponent },
-  { path: 'crud', component: CrudComponent },
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+  { path: 'signup', component: SignupComponent },
+  {
+    path: 'navigation', canActivate: [AuthGuard], component: NavigationComponent, children: [
+      { path: 'home', component: HomeComponent },
+      { path: 'age-calculator', component: AgeCalculatorComponent },
+      { path: 'rent-calculator', component: RentCalculatorComponent },
+      { path: 'km-mile', component: KmMileComponent },
+      { path: 'crud', component: CrudComponent },
+      { path: '**', component: HomeComponent },
+
+    ]
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [AuthGuard]
 })
 export class AppRoutingModule { }
